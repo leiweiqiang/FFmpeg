@@ -30,6 +30,8 @@ DNN-OBJS-$(CONFIG_LIBTENSORFLOW)             += dnn_backend_tf.o
 OBJS-$(CONFIG_DNN)                           += dnn_interface.o dnn_backend_native.o $(DNN-OBJS-yes)
 
 # audio filters
+OBJS-$(CONFIG_TRANSFORM360_FILTER)           += vf_transform360.o
+
 OBJS-$(CONFIG_ABENCH_FILTER)                 += f_bench.o
 OBJS-$(CONFIG_ACOMPRESSOR_FILTER)            += af_sidechaincompress.o
 OBJS-$(CONFIG_ACONTRAST_FILTER)              += af_acontrast.o
